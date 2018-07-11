@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <string name="choose_one">Choose your favorite!</string>
+    <string name="single_step">Single Step is here</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="recipe_widget_title">CookiePieCake Name</string>
+    <string name="cherrypie">Cherry Pie is here</string>
+    <string name="still_no_recipe">Recipe hasn\'t been selected yet</string>
+
+</resources>
