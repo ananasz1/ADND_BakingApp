@@ -21,6 +21,12 @@ public class SingleStepActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        if(this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            getSupportActionBar().show();
+        } else {
+            getSupportActionBar().hide();
+        }
+
         // if no saved state, create new fragment
         if (savedInstanceState == null) {
 
@@ -33,13 +39,13 @@ public class SingleStepActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            getSupportActionBar().hide();
-        } else {
-            getSupportActionBar().show();
-        }
-    }
+  //  @Override
+  //  public void onConfigurationChanged(Configuration newConfig) {
+  //      super.onConfigurationChanged(newConfig);
+  //      if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+  //          getSupportActionBar().hide();
+  //      } else {
+  //          getSupportActionBar().show();
+  //      }
+  //  }
 }

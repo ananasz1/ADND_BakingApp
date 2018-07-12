@@ -26,7 +26,6 @@
             android:parentActivityName=".activities.MainActivity" />
         <activity
             android:name=".activities.SingleStepActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
             android:parentActivityName=".activities.DetailsActivity" />
 
         <receiver android:name=".widget.BakingWidgetProvider">
